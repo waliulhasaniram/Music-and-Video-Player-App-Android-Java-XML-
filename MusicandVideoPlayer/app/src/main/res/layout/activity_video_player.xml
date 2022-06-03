@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoPlayer"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/musicList"
+            android:text="see music list"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id = "@+id/videoList"
+            android:text = "see video list"
+            android:layout_marginTop = "30dp"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/VideoName"
+        android:text="video name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <SurfaceView
+        android:id="@+id/videoplayer"
+        android:layout_width="415dp"
+        android:layout_height="205dp"/>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/previous"
+            android:src="@drawable/ic_baseline_skip_previous_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/pause"
+            android:src="@drawable/ic_baseline_pause_presentation_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/next"
+            android:src="@drawable/ic_baseline_skip_next_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
